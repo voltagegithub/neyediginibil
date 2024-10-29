@@ -1,0 +1,85 @@
+@media (max-width:1399px) {
+    .container.half-post-wrapper{max-width: 100%;}    
+    .home-banner-nav{overflow: hidden; max-width: 100%;}
+}
+@media (max-width:1260px) {
+    .first-post-content{flex-direction: column; width: 100%; justify-content: center;}
+    .first-post-logos,.first-post-text{width: 100%;}
+    .first-post-logo{margin-left: 0; margin-right: 20px;}
+    .first-post-logos{margin-bottom: 30px;}
+    .full-past-post-wrapper{justify-content: space-between; margin-left: 0; align-items: flex-start; gap: 20px;}
+    
+    
+}
+@media (max-width:1200px) {
+    .page-banner-content{width: 100%; padding: 0 20px; font-size: 40px; text-align: center; line-height: normal;}
+    .second-post-background{position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 20px; overflow: hidden;}
+    .second-post-wrapper{position: relative; width: 50%;}
+    .second-post-background img{max-width: 100%; object-fit: cover; width: 100%; height: 100%;}
+    
+    #home-dby-box{display: block; width: 50%;}
+    #home-dby-box .second-post-wrapper{width: 100%;}
+    .second-post-logo img{max-width: 100%; display: block;}
+    .first-post-wrapper{max-width: 500px;}
+    .thirt-post-content{margin-top: 0;}
+}
+
+@media (max-width:1120px) {
+    .first-post-wrapper{width: 100%; max-width: 720px;}
+    .first-post-wrapper{margin-bottom: 40px;}
+    .half-post-wrapper{flex-direction: column; width: 100%; align-items: center; width: 100%; max-width: 100%;}
+    .full-past-post-wrapper{flex-direction: row; display: flex; justify-content: space-between;}
+
+    #sertifika-liste{flex-wrap: wrap !important;}
+}
+
+@media (max-width:960px) {
+    .footer-menu div{flex-direction: column;}
+    .footer-menu div a{margin-right: 0; padding: 10px 0;}
+}
+
+@media (max-width:767px) {
+    #home-dby-box{width: 100%;}
+    .footer-wrapper{flex-direction: column;}
+    footer .container {padding: 20px;}
+    .footer-logos{justify-content: space-around; margin-bottom: 20px; flex-direction: column;}
+    .footer-logo-2{margin-left: 0; margin-top: 20px !important;}
+    .footer-social-media-icons{justify-content: center !important; margin-top: 20px !important;}
+    .footer-social-media-icons{max-width: 320px; margin: auto;}
+    .footer-social-media-wrapper{display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;}
+    .footer-social-media-icons{width: 100%; display: flex; justify-content: space-around;}
+    .footer-social-media-icons a{display: flex; width: 30px; height: 30px; }
+    .full-past-post-wrapper{flex-direction: column; display: flex; justify-content: space-between; margin-left: 0;}
+
+    .second-post-wrapper{width: 100%; margin-bottom: 20px;}
+    .footer-social-media-wrapper-header{text-align: center;}
+
+}
+
+@media (max-width:560px) {
+    .first-post-content{flex-direction: column; width: 100%;}
+    .first-post-text, .first-post-logos{width: 100%; margin-bottom:20px ;}
+    .first-post-logo:nth-child(1){margin-left: 0;}
+    .first-post-link a{display: flex; height: 50px; align-items: center;}
+    .first-post-link a img{height: 20px;}
+    
+    .second-post-texts, .second-post-logo{width: 100%;}
+    .second-post-logo{order: 1; display: flex; justify-content: center;}
+    .second-post-logo img{max-width: 200px;}
+    .second-post-text{width: 100%;}
+}
+
+@media (max-height:680px) {
+
+#hemen-basvur-sticky{top: 250px;}
+
+}
+
+@media (max-height:730px) {
+
+    #menu-items-wrapper a{font-size: 26px;}
+    }
+
+    @media (max-height:530px) { 
+        #menu-items-wrapper .container{height: 250px; overflow-y: scroll;}
+    }

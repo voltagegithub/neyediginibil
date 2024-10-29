@@ -1,0 +1,229 @@
+#header{position: static;}
+
+#brand-content-wrapper{position: relative; height: calc(100vh - 110px); transition: ease-in-out .4s all; background-color: #0c479d; min-height: 650px; }
+
+#brand-image-bg-wrapper{width: 100%;  height: 100%;  position: relative; z-index: 1; background-color: #0c479d;  }
+#brand-image-bg-wrapper .mask{position: absolute; left: 0; top: 0; width:100%; height: 100%; z-index: 2; background-color: rgba(12, 71, 157, .75);}
+#brand-image-bg-wrapper img{width: 100%; height: 100%; object-fit: cover; position: relative; opacity: 1; transition: cubic-bezier(0.075, 0.82, 0.165, 1) .4s all;} 
+
+#brand-content-wrapper:not(.contents-loaded) #brand-image-bg-wrapper  .mask{display: none;}
+#brand-content-wrapper:not(.contents-loaded) #brand-image-bg-wrapper  img{opacity: 0;}
+
+
+
+#brand-products-wrapper{ width:100%; height:calc(100% - 40px); z-index: 2;}
+#brand-content-wrapper.contents-loaded {height: calc(100vh - 300px);}
+#brand-content-wrapper.contents-loaded .flickity-button{display: none !important;}
+#brand-content-wrapper.contents-loaded #product-title-bar{left: 50%; transform: translateX(-50%) translateY(-50%) scale(2); top: calc(50% - 40px); position: absolute; width: auto; opacity: .5; white-space: nowrap;}
+#brand-content-wrapper.contents-loaded #product-title-bar .product-name{padding: 0;}
+#brand-content-wrapper.contents-loaded #product-title-bar #brand-name-logo {display: none !important;}
+#brand-content-wrapper.contents-loaded #product-title-bar h1 {display: none;}
+#brand-content-wrapper.contents-loaded #product-detail-btn-wrapper{position: absolute; z-index: 10001; left: 0; top: 0; height: 0;}
+#brand-content-wrapper.contents-loaded #product-detail-btn-wrapper .detail-info-btn{left: calc(50% -  520px); position: absolute; transform: translateY(20px);}
+
+#product-detail-btn-wrapper{height: 40px;}
+#product-title-bar{color: #FFF; font-family: 'Titillium Web'; max-height: 200px; transition: ease-in-out .3s all; width: 100%; max-width: 1110px; position: absolute; left: 50%; transform: translateX(-50%); transition: ease-in .2s all; z-index: 9999; }
+
+#brand-name-logo{height: 100px; display: flex; align-items: center; width: 150px;}
+#brand-name-logo img{display: block; max-width: 150px; max-height: 100%; }
+
+.product-name{padding: 20px 0;}
+#product-name-info{ opacity: 0; transition: ease-in-out .4s; }
+#product-name-info.show{opacity: 1;}
+#product-title-bar h1{font-size: 22px; font-weight: 700; color: #FFF; margin-bottom: 0;    margin-top: 15px;}
+#product-name-info{font-size: 80px; font-weight: 900; line-height: 100%; position: relative;}
+#product-name-info div sup{font-size: 50%; line-height: 0; top: -.75em;}
+
+#brand-content-wrapper .clone-image {opacity: 0; position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%) scale(0); transition: ease-in-out .2s all; max-height: calc(100% - 100px); max-width: calc(100% - 40px); z-index: 10001;}
+#brand-content-wrapper.contents-loaded .clone-image {opacity: 1; transform: translateX(-50%) translateY(-50%) scale(1.2)}
+
+#products-slider{width: 100%; max-width: 1440px;  height: 100%; transition: ease-in-out .6s;}
+.product-item{ height: 100%; width: 560px;}
+.product-item img{transition: all ease-in-out .5s; max-width: 100%; }
+.product-item a{display: flex; height: 100%; width: 100%; align-items: flex-end; padding-bottom: 80px;}
+ .product-item:not(.is-selected) img{opacity: .60; transform: scale(.75); transform-origin: center center;} 
+ .product-item:not(.is-selected) a{cursor: default;} 
+
+ #products-slider .flickity-viewport{max-height: 100% !important; overflow: visible !important;}
+.flickity-slider{display: flex; align-items: center; }
+
+
+.btn{background-color:#0c479d; color: #FFF; font-family: 'Titillium Web'; font-weight: 900; box-shadow: 0 0 20px rgba(0,0,0,.5); }
+.detail-info-btn{ padding: 5px 20px; transform: translateY(-50%); font-size: 20px; border-radius: 50em;}
+.detail-info-btn:hover{color: #0c479d; background-color: #FFF;}
+
+#product-content-wrapper{position: relative; z-index: 4; display: none;}
+#product-content-wrapper.show{display: block;}
+#brand-content-wrapper.contents-loaded {}
+#brand-content-wrapper.contents-loaded #products-slider{opacity: 0;}
+
+
+#brand-content-wrapper.contents-loaded .product-item:not(.is-selected){opacity: 0; transition: ease-in-out .3s;}
+.product-item-cell{max-width: 50%;}
+.product-content-item:nth-child(2n) .product-item-cell:nth-child(2){order: 1;}
+.product-content-item:nth-child(2n) .product-item-cell:nth-child(1){order: 2;}
+
+.product-content-item .product-content-image-wrapper img{max-width: 100%;}
+
+.product-contemt-item-info-wrapper, .product-content-image-wrapper{padding: 20px 0;}
+
+
+.product-content-item .container{max-width: 1260px;}
+.product-content-item h2{color: #0c479d; font-family: 'Titillium Web'; font-weight: 900; font-size: 28px; margin: 0;}
+.product-content-item p{margin: 0;}
+
+.product-content-item{color: #586367;}
+.product-content-item.ekmek{background-color: #f48037;}
+.product-content-item.mayonez{background-color: #f8f1df;}
+.product-content-item.marul{background-color: #819e4d; color: #ffffff;}
+.product-content-item.marul h2{ color: #ffffff;}
+.product-content-item.marul .product-content-image-wrapper{padding: 0;}
+.product-content-item.marul .product-content-image-wrapper img{transform: translateY(20px);}
+
+.product-content-item.tursu .product-content-image-wrapper{padding: 0;}
+.product-content-item.tursu .product-content-image-wrapper img{transform: scale(1.15) translateY(20px);}
+
+.product-content-item.kekik .product-content-image-wrapper img{}
+
+.product-content-item.kekik{background-color: #cedaeb;}
+
+
+.product-content-item.maydanoz .product-content-image-wrapper img{transform:  translateY(0px);}
+
+.product-content-item.popeyes-peynir .product-content-image-wrapper img{transform:  translateY(70px);}
+
+.product-content-item.sw-peynir .product-content-image-wrapper img{transform:  translateY(70px);}
+
+
+.product-content-item.biber{background-color: #819e4d; color: #ffffff;}
+
+.product-content-item.tereyagi{background-color: #cedaeb;}
+
+.product-content-item.domates{background-color: #d32b27; color: #FFF;}
+.product-content-item.domates h2{color: #FFF;}
+
+.product-content-item.pizza-sosu{background-color: #d32b27; color: #FFF;}
+.product-content-item.pizza-sosu h2{color: #FFF;}
+
+.product-content-item.pizza-sosu img,.product-content-item.kekik img{ max-width: 80% !important ; max-height: 80%;}
+
+.product-content-item.sogan{background-color: #dee0e1;}
+.product-content-item.tursu{background-color: #cedaeb;}
+.product-content-item.ketcap{background-color: #f8f1df; color: #d32b27;}
+
+.product-content-item.ciftlik-sos{background-color: #f8f1df; color: #d32b27;}
+.product-content-item.ciftlik-sos h2{ color: #d32b27;}
+
+.product-content-item.ciftlik-sos img{max-width: 80% !important;}
+
+
+.product-content-item.ketcap h2{ color: #d32b27;}
+.product-content-item.et{background-color: #f48037;}
+
+.product-content-item.tavuk{background-color: #f48037; color: #ffffff;}
+.product-content-item.tavuk h2{ color: #ffffff;}
+
+.product-content-item.teriyaki-tavuk{background-color: #f1b602; color: #ffffff;}
+.product-content-item.teriyaki-tavuk h2{ color: #ffffff;}
+
+.product-content-item.teriyaki-sos{background-color: #612924; color: #ffffff;}
+.product-content-item.teriyaki-sos h2{ color: #ffffff;}
+
+.product-content-item.sw-peynir{background-color: #f1b602; color: #ffffff;}
+.product-content-item.sw-peynir h2{ color: #ffffff;}
+
+.product-content-item.sebzeler-soslar{background-color: #008d44; color: #ffffff;}
+.product-content-item.sebzeler-soslar h2{ color: #ffffff;}
+
+.product-content-item.sw-patates{background-color: #f1b602; color: #ffffff;}
+.product-content-item.sw-patates h2{ color: #ffffff;}
+
+
+.product-content-item.tavuk-lokma{background-color: #ff8731; color: #ffffff;}
+.product-content-item.tavuk-lokma h2{ color: #ffffff;}
+
+
+.product-content-item.kurabiye{background-color: #ffffff; color: #0c479d;}
+.product-content-item.kurabiye h2{ color: #0c479d;}
+
+.product-content-item.cheddar{background-color: #f1b602; color: #ffffff;}
+.product-content-item.cheddar h2{ color: #ffffff;}
+
+.product-content-item.beef{background-color: #612924; color: #ffffff;}
+.product-content-item.beef h2{ color: #ffffff;}
+
+.product-content-item.barbeku-sos{background-color: #612924; color: #ffffff;}
+.product-content-item.barbeku-sos h2{ color: #ffffff;}
+
+.product-content-item.popeyes-peynir{background-color: #ff8731; color: #ffffff;}
+.product-content-item.popeyes-peynir h2{ color: #ffffff;}
+
+.product-content-item.fume-et{background-color: #612924; color: #ffffff;}
+.product-content-item.fume-et h2{ color: #ffffff;}
+
+#products-slider .flickity-button{background-color: #0c479d; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5)}
+#products-slider .flickity-button svg path{fill: #FFF;}
+#products-slider .flickity-viewport{height: 100% !important;}
+
+#brand-name-logo-img-wrapper{margin-bottom: 16px; max-height: 100%;}
+#brand-name-logo{margin-right: 20px;}
+
+body.footer-disable footer{display: none;}
+
+
+
+.brand-select-dropdown{ color: #FFF; left: -25px; min-width: 100%; top: 0; white-space: nowrap; font-size: 18px; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); border-radius: 10px; width:180px; background-color: #0c479d; }
+.brand-dropdown-list{text-align: center; display: none;font-family: 'Titillium Web'; font-size: 20px; font-weight: 900;}
+.brand-dropdown-list a{display: block; text-transform: uppercase;  text-decoration: none; color: #FFF; padding: 5px 10px;}
+.brand-dropdown-list a:hover{background-color:#586367 ;}
+.brand-select-dropdown:hover .brand-dropdown-list{display: block;}
+.brand-select-button{padding: 5px 10px; display: flex; justify-content: space-between; align-items: center;}
+
+.product-legal-footer-text{color:#FFF; position:absolute; left:0; bottom:0; font-size:13px; transform:translateY(-80px); opacity:.5; width:100%; text-align:center;}
+#brand-content-wrapper.contents-loaded .product-legal-footer-text{transform: translateY(-20px);}
+
+@media (max-width:1179px) {
+    #brand-content-wrapper.contents-loaded #product-detail-btn-wrapper .detail-info-btn{left: 120px; position: absolute;}
+}
+
+@media (max-width:1030px) {
+    .product-item{width: 100%; display: flex; align-items: center; justify-content: center;}    
+}
+
+
+@media (max-width:1024px) {
+    .product-item{width: 100%;}
+    #products-slider{max-width: 100vw; overflow: hidden;}   
+}
+
+@media (max-width:767px) { 
+    #product-name-info {font-size: 36px !important;}
+    
+    #brand-content-wrapper.contents-loaded {height: calc(100vh - 300px);}
+    .product-legal-footer-text{position: static; transform: none; padding: 0 20px; padding-bottom: 50px; }
+    #brand-content-wrapper.contents-loaded .product-legal-footer-text{ padding-bottom: 0; transform: none; }
+    #product-name-info{width: 100%;}
+    #product-title-bar{position: static; transform: none;}
+    
+    #brand-products-wrapper{  max-height: calc(100dvh - 120px);}
+    .product-item a{align-items: center; padding-bottom: 0;}
+    .product-content-item .product-content-image-wrapper img{transform: none !important; }
+    #brand-content-wrapper.contents-loaded #product-title-bar{transform: translateX(-50%) translateY(-50%); top: calc(10% + 70px); white-space: normal; width: 100%;}
+    #brand-content-wrapper.contents-loaded #product-detail-btn-wrapper .detail-info-btn{left: 20px}
+    #brand-name-logo{display: none !important;}
+    .product-name{padding: 20px; text-align: center;}
+    .product-content-item-cell-wrapper{flex-direction: column;}
+    .product-item-cell{width: 100%; max-width: 100%;}
+    .product-content-item:nth-child(2n) .product-item-cell:nth-child(2){order: 2;}
+    .product-content-item:nth-child(2n) .product-item-cell:nth-child(1){order: 1;}
+    .product-content-image-wrapper{display: flex; align-items: center; justify-content: center;}
+    #brand-content-wrapper.contents-loaded .clone-image{    transform: translateX(-50%) translateY(calc(-50% + 40px)) scale(1);}
+}
+
+@media (max-height:840px) {
+    #brand-content-wrapper{height: calc(100vh - 90px);}   
+}
+
+@media (max-height:640px) {
+    .brand-select-dropdown{display: none;}   
+}
